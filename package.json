@@ -1,0 +1,24 @@
+{
+  "name": "hackaboss",
+  "version": "1.0.0",
+  "description": "Ejercicios bootcamp Hack a Boss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server www --files www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenabao/hackaboss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorenabao/hackaboss/issues"
+  },
+  "homepage": "https://github.com/lorenabao/hackaboss#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}

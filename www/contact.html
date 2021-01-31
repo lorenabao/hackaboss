@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicio HTML para el bootcamp Hack a Boss" />
+    <meta name="autor" content="Lore :)" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>It, el payaso Pennyswise</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="index-header">
+        <article class="info">
+            <h1>IT, Chapter Two</h1>
+            <h2>Cómo contactar con Pennyswise</h2>
+            <p>
+                Clear your mind, hide your fear
+                Don't look around, don't turn around
+                Pennywise is here
+            </p>
+            <a href="./index.html">Inicio</a>
+            <a href="#contacto">Contacto</a>
+        </article>
+        <aside>
+            <h3>El creador de la novela</h3>
+            <img src="./images/stephen-king.jpg" alt="Stephen King portrait">
+            <span>Stephen King</span>
+            <span>Edad: 73 años</span>
+            <span>Ciudad de naciomiento: Portland, Oregon</span>
+            <section class="social">
+                <a href="https://twitter.com/StephenKing" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://github.com/lorenabao" target="_blank" rel="noopener">Github</a>
+            </section>
+        </aside>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <p>
+            Puedes buscar a Pennywise en alguna alcantarilla o, 
+            si te resulta más cómodo, rellenar el siguiente formulario:
+        </p>
+        <form id="contacto-form" action="" method="GET">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="name" name="nombre" autofocus required> 
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required> 
+                <label for="url">Web personal:</label>
+                <input type="url" id="url" web="url" placeholder="Escribe la URL de tu página web personal">
+            </fieldset>
+            <fieldset>
+                <legend>Fechas</legend>
+                <label for="fecha">Fecha disponible:</label>
+                <input type="date" id="fecha">
+                <input type="time" id="fecha">
+                <input type="datetime" id="fecha">
+                <input type="month" id="fecha">
+                <input type="week" id="fecha">
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="numero">Indica un número:</label>
+                <input type="range" id="numero" min="-10" max="10">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono">
+                <label for="busqueda">Término de búsqueda:</label>
+                <input type="search" name="busqueda" id="bsuqueda">
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color" id="color">
+            </fieldset>
+            <fieldset>
+                <legend>Mensaje</legend>
+                <label for="texto">Mensaje:</label>
+                <textarea name="texto" id="texto" cols="30" rows="10">Tu mensaje...</textarea>
+            </fieldset>
+        </form>
+        <button type="submit" form="contacto-form" value="Submit">Enviar</button>
+
+    </main>
+    <footer>
+        <span>
+            Creado por Lore 🙋
+        </span>
+        <section>
+            <p>Dónde encontrarme:</p>
+            <a href="https://github.com/lorenabao" target="_blank" rel="noopener">Github</a>
+            <a href="https://twitter.com/bao_lorena" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/in/lorenabao/" target="_blank" rel="noopener">Linkedin</a>
+        </section>
+    </footer>
+</body>
+</html>
