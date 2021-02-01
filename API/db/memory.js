@@ -7,7 +7,7 @@ const addUser = (email, password) => {
     if (user) {
         throw new Error('User already exists')
     }
-    
+
     users.push({
         email,
         password
@@ -18,7 +18,23 @@ const addUser = (email, password) => {
 
 }
 
+const getUsers = () => {
+    return Object.keys(users)
+}
+
+const getUser = (email) => {
+    let user = users.find(u => u.email === email)
+
+    if(!user) {
+        throw new Error('User doesnt found')
+    }
+
+    return user
+}
+
 module.exports = {
-    addUser
+    addUser,
+    getUser,
+    getUsers
 }
 
